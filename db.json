@@ -1,0 +1,17 @@
+{
+    "articles":
+        [
+    {
+        "title": "temporary truth",
+        "author": "Shreyansh Sinha",
+        "subject": "Wisdom",
+        "content": "Now let’s create a new JSON file with name db.json. This file contains the data which should be exposed by the REST API. For objects contained in the JSON structure CRUD entpoints are created automatically. Take a look at the following sample db.json file"
+    },
+    {
+        "title": "sad reality",
+        "author": "Akash raghuwanshi",
+        "subject": "Dark Truth",
+        "content": "The Postman user interface is easy to use. To initiate a GET request fill out the form as you can see in the following screenshot. Click the Send button and you’ll receive the response in JSON format"
+    }
+]
+}
