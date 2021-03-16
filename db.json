@@ -1,17 +1,25 @@
 {
-    "articles":
-        [
+  "articles": [
     {
-        "title": "temporary truth",
-        "author": "Shreyansh Sinha",
-        "subject": "Wisdom",
-        "content": "Now let’s create a new JSON file with name db.json. This file contains the data which should be exposed by the REST API. For objects contained in the JSON structure CRUD entpoints are created automatically. Take a look at the following sample db.json file"
+      "id": 1,
+      "title": "temporary truth",
+      "author": "Shreyansh Sinha",
+      "subject": "Wisdom",
+      "content": "Now let’s create a new JSON file with name db.json. This file contains the data which should be exposed by the REST API. For objects contained in the JSON structure CRUD entpoints are created automatically. Take a look at the following sample db.json file"
     },
     {
-        "title": "sad reality",
-        "author": "Akash raghuwanshi",
-        "subject": "Dark Truth",
-        "content": "The Postman user interface is easy to use. To initiate a GET request fill out the form as you can see in the following screenshot. Click the Send button and you’ll receive the response in JSON format"
+      "id": 2,
+      "title": "sad reality",
+      "author": "Akash raghuwanshi",
+      "subject": "Dark Truth",
+      "content": "The Postman user interface is easy to use. To initiate a GET request fill out the form as you can see in the following screenshot. Click the Send button and you’ll receive the response in JSON format"
+    },
+    {
+      "id": 3,
+      "title": "Best Blogs in 2021",
+      "author": "Shreyansh Sinha",
+      "subject": "Exposure to Writing Blogs",
+      "content": "The best blogs share similar properties that make them successful: they post engaging and useful content that attracts visitors and makes them want to read more. Popular blog writers know how to communicate with their target audience, as they understand how their readership thinks and feels.\n\nTop-rated online blogs have plenty of traffic. Apart from enjoying well-deserved popularity, many blogs can become a lucrative source of income for talented bloggers.\n\nHowever, the quality of the content itself is sometimes not enough, meaning that most popular blogs also pay attention to design. Therefore, when creating this list, we also considered the best blog designs."
     }
-]
+  ]
 }

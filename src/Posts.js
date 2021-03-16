@@ -1,68 +1,33 @@
 import React, { useState, useEffect } from "react";
-
+import axios from 'axios'
 import "./Posts.css"
 
-// const Child = (props) => {
-// 	console.log(props)
-
-// 	return (
-// 			<div>  </div>
-// 		)
-// }
-
 const Posts = () => {
-	const [data, setData] = useState(null
-		);
-
-	const dummy = {
-		title: "dummy",
-		author: "dummy",
-		subject: "dummy",
-		content: 'dummy'}
-
-	const [count, setCount] = useState(0)
-
-	useEffect(() => {
-		async function fetchAPI() {
-		let response = await fetch("https://simple-blog-4d17b.firebaseio.com/posts.json")
-		response = await response.json();
-		
-		console.log(response)
-		setData(response)
-	}
-	fetchAPI()
-	}, [])
-
-
-	setTimeout(
-	  () => setCount(count + 1),
-	  1000
-	)
-
-	const string = JSON.stringify(data)
 	
-	if(count == 0) {
-		return (
-			<div className = "Posts"> 
-				{dummy.title}	
-			 </div>
-				 
+	const [data, setData] = useState({})
+	const [delay, setDelay] = useState(false)
+	useEffect(() => {
+		axios
+		.get('http://localhost:3001/articles')
+		.then(response => {
 			
-			
-			)
-	}
-	else {
-		if({string} === "null") {
-			return (
-				<div></div>
-			)
-		}
-		else 
-		return (
-			<div className = "Posts"> {data[Object.keys(data).sort().pop()].body} </div>
+			console.log(response)
+			setData(response.data)
+			setDelay(true)
+		})
+	}, [])
+	console.log(delay)
 
+	if(delay === false)
+		return <h1> loading... </h1>
+
+	return (
+			<div className = "Posts">
+				<h1> {data[data.length-1].title} </h1>
+				<p> {data[data.length-1].author} {data[data.length-1].subject} </p>
+				<p> {data[data.length-1].content} </p>
+			</div>	
 		)
-	}
 }
 
 export default Posts;
