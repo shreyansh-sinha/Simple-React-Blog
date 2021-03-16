@@ -23,9 +23,15 @@ const Posts = () => {
 
 	return (
 			<div className = "Posts">
-				<h1> {data[data.length-1].title} </h1>
-				<p> {data[data.length-1].author} {data[data.length-1].subject} </p>
-				<p> {data[data.length-1].content} </p>
+				{data.map((post, i) => 
+						<div key = {i}>
+						<h1 > {post.title} </h1>
+						<p > {post.author} </p>
+						<p> {post.subject} </p>
+						<p > {post.content} </p>
+						<hr/>
+						</div>
+					)}
 			</div>	
 		)
 }

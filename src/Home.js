@@ -9,10 +9,11 @@ const Home = () => {
 					<h1 className = "Home-Title"> Blog Creater </h1>
 					
 					<nav className = "Main-Nav">
-						<Link to = "/new" className = "Main-Nav-Link">
+						<Link to = "/new" className = "btn1">
 							New Post
 						</Link>
 
+						<Link to = "/posts" className = "btn1"> VIEW POSTS </Link>
 					</nav>
 				</div>
 			</Fragment>	

@@ -56,18 +56,18 @@ const NewPost = () => {
 	}
 
 	return (
-			<div className = 'New-Post-Wrapper'>
+			<div className = "New-Post-Wrapper">
 				<h1 className = "New-Post-Title"> New Post </h1>
 				<form onSubmit = {submitData}>
-					Title: <input type="text" id = "title" value = {newTitle} onChange = {handleTitle} placeholder = "Title" required minLength="3"/> 
+					<input type="text" id = "title" value = {newTitle} onChange = {handleTitle} placeholder = "Title" required minLength="3"/> 
 					
 					<br/>
 
-					Author: <input type="text" id = "author" value = {newAuthor} onChange = {handleAuthor} placeholder = "Title" required minLength="3"/>
+					<input type="text" id = "author" value = {newAuthor} onChange = {handleAuthor} placeholder = "Author" required minLength="3"/>
 
 					<br/>
 
-					Subject: <input type="text" id = "subject" value = {newSubject} onChange = {handleSubject} placeholder = "Title" required minLength="3"/>
+					 <input type="text" id = "subject" value = {newSubject} onChange = {handleSubject} placeholder = "Subject" required minLength="3"/>
 
 					<br/>
 					<textarea type = "text" id = "body" placeholder="Content" onChange = {handleContent} required minLength="20"  
@@ -79,7 +79,7 @@ const NewPost = () => {
 
 				</form>
 				
-				<Link to = "/posts" className = "btn"> POST </Link>
+				
 							
 			</div>	
 			

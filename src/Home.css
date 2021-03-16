@@ -1,5 +1,6 @@
 .Main-Nav {
   text-align: center;
+
 }
 
 .Main-Nav-Link {
@@ -10,7 +11,10 @@
 
 .Home-Title-Wrapper {
   display: flex;
+  background-image: url('./tim.jpg');
+  background-position: fixed;
   height: 100vh;
+  width: 100vw;
   justify-content: center;
   align-items: center;
   flex-direction: column
